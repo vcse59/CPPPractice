@@ -72,16 +72,16 @@ void BinaryOperatorOverloading()
     *obj11 = (*obj1) | (*obj2);
     obj11->print();
 
-    free(obj1);
-    free(obj2);
-    free(obj4);
-    free(obj5);
-    free(obj6);
-    free(obj7);
-    free(obj8);
-    free(obj9);
-    free(obj10);
-    free(obj11);
+    delete obj1;
+    delete obj2;
+    delete obj4;
+    delete obj5;
+    delete obj6;
+    delete obj7;
+    delete obj8;
+    delete obj9;
+    delete obj10;
+    delete obj11;
 }
 
 void UnaryOperatorOverloading()
@@ -116,6 +116,8 @@ void UnaryOperatorOverloading()
     CSampleClass obj5;
     obj5 = !(obj4);
     obj5.print();
+
+    delete obj1;
 }
 
 int main(int argc, char *argv[])
