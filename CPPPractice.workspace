@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="CPPPractice" Database="" Version="10000">
+  <Project Name="CopyConstructor" Path="CopyConstructor/CopyConstructor.project" Active="No"/>
+  <Project Name="OperatorOverloading" Path="OperatorOverloading/OperatorOverloading.project" Active="No"/>
+  <Project Name="Inheritance" Path="Inheritance/Inheritance.project" Active="No"/>
+  <Project Name="Templates" Path="Templates/Templates.project" Active="No"/>
+  <VirtualDirectory Name="STL">
+    <VirtualDirectory Name="Algorithms">
+      <VirtualDirectory Name="Sorting">
+        <Project Name="sorting_practice_1" Path="sorting_practice_1/sorting_practice_1.project" Active="No"/>
+        <Project Name="sorting_practice_2" Path="sorting_practice_2/sorting_practice_2.project" Active="No"/>
+      </VirtualDirectory>
+      <Project Name="Searching" Path="Searching/Searching.project" Active="No"/>
+    </VirtualDirectory>
+    <Project Name="Sequence" Path="Sequence/Sequence.project" Active="Yes"/>
+  </VirtualDirectory>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="CopyConstructor" ConfigName="Debug"/>
+      <Project Name="Inheritance" ConfigName="Debug"/>
+      <Project Name="OperatorOverloading" ConfigName="Debug"/>
+      <Project Name="Templates" ConfigName="Debug"/>
+      <Project Name="sorting_practice_1" ConfigName="Debug"/>
+      <Project Name="sorting_practice_2" ConfigName="Debug"/>
+      <Project Name="Searching" ConfigName="Debug"/>
+      <Project Name="Sequence" ConfigName="Debug"/>
+      <Project Name="Sequence" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="CopyConstructor" ConfigName="Release"/>
+      <Project Name="OperatorOverloading" ConfigName="Release"/>
+      <Project Name="Inheritance" ConfigName="Release"/>
+      <Project Name="Templates" ConfigName="Release"/>
+      <Project Name="sorting_practice_1" ConfigName="Release"/>
+      <Project Name="sorting_practice_2" ConfigName="Release"/>
+      <Project Name="Searching" ConfigName="Release"/>
+      <Project Name="Sequence" ConfigName="Release"/>
+      <Project Name="Sequence" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

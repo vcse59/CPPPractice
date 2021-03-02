@@ -46,6 +46,15 @@ void classTemplate()
         delete obj1;
     }
     obj1 = nullptr;
+
+    sampleClassTemplate<string, string, 100> *obj2 = new sampleClassTemplate<string, string, 100>("Vivek", "Anjali");
+    obj2->printObjectInfo();
+
+    if (obj2 != nullptr)
+    {
+        delete obj2;
+    }
+    obj2 = nullptr;
 }
 
 int main(int argv, char* argc[])

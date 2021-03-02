@@ -6,5 +6,5 @@ extern T maximum(T arg1, T arg2);
 template <typename T>
 extern T addition(T arg1, T arg2);
 
-#include "functionTemplates.cpp"
+//#include "functionTemplates.cpp"
 #endif

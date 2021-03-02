@@ -1,0 +1,1 @@
+../build-Debug/Inheritance/main.cpp.o ../build-Debug/Inheritance/DerivedSampleClass.cpp.o ../build-Debug/Inheritance/BaseSampleClass.cpp.o
