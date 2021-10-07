@@ -12,7 +12,9 @@
       </VirtualDirectory>
       <Project Name="Searching" Path="Searching/Searching.project" Active="No"/>
     </VirtualDirectory>
-    <Project Name="Sequence" Path="Sequence/Sequence.project" Active="Yes"/>
+    <Project Name="Sequence" Path="Sequence/Sequence.project" Active="No"/>
+    <Project Name="AssociativeContainers" Path="AssociativeContainers/AssociativeContainers.project" Active="No"/>
+    <Project Name="ContainerAdaptors" Path="ContainerAdaptors/ContainerAdaptors.project" Active="Yes"/>
   </VirtualDirectory>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
@@ -26,6 +28,8 @@
       <Project Name="Searching" ConfigName="Debug"/>
       <Project Name="Sequence" ConfigName="Debug"/>
       <Project Name="Sequence" ConfigName="Debug"/>
+      <Project Name="AssociativeContainers" ConfigName="Debug"/>
+      <Project Name="ContainerAdaptors" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -38,6 +42,8 @@
       <Project Name="Searching" ConfigName="Release"/>
       <Project Name="Sequence" ConfigName="Release"/>
       <Project Name="Sequence" ConfigName="Release"/>
+      <Project Name="AssociativeContainers" ConfigName="Release"/>
+      <Project Name="ContainerAdaptors" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

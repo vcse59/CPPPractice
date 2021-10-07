@@ -1,0 +1,1 @@
+../build-Debug/ContainerAdaptors/CStackClass.cpp.o ../build-Debug/ContainerAdaptors/main.cpp.o

@@ -5,6 +5,7 @@
 using namespace std;
 using namespace Tree;
 
+
 int main(int argv, char* argc[])
 {
     Container *cont = new Container();
@@ -16,7 +17,11 @@ int main(int argv, char* argc[])
     cont->insert(new CNode(73));
     cont->insert(new CNode(93));
 
-    cont->printContainer();
+    cont->printBFSTraversal();
+    cont->printDFSPreOrderTraversal();
+    cont->printDFSPostOrderTraversalUsingTwoStack();
+    cont->printDFSInOrderTraversal();
+    cont->printDFSPostOrderTraversal();
 
     return 0;
 }

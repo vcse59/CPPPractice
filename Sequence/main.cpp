@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <deque>
 #include <list>
+#include <array>
+#include <forward_list>
 
 using namespace std;
 
@@ -116,6 +118,94 @@ void listExample()
         cout << *it << " ";
     }
     cout << endl;
+    
+    if (listObj != nullptr)
+        delete listObj;
+    listObj = nullptr;
+}
+
+void arrayExample()
+{
+    array<int, 10> *arrObj = new array<int, 10>();
+    
+    for (auto index = 0; index < 10; ++index)
+    {
+        arrObj->at(index) = index;
+    }
+
+    cout << "Array content is : " << endl;
+    for(auto it = arrObj->cbegin(); it != arrObj->cend(); ++it)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+    
+    cout << "Sorted array in ascending order is : " << endl;
+    sort(arrObj->begin(), arrObj->end());
+    for(auto it = arrObj->cbegin(); it != arrObj->cend(); ++it)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+
+
+    cout << "Sorted array in descending order is : " << endl;
+    sort(arrObj->begin(), arrObj->end(), greater<int>());
+    for(auto it = arrObj->cbegin(); it != arrObj->cend(); ++it)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+    
+    if (arrObj != nullptr)
+        delete arrObj;
+    arrObj = nullptr;
+}
+
+void forward_listExample()
+{
+    forward_list<int> *fwdListObj = new forward_list<int>();
+    
+    forward_list<int>::iterator it;
+    
+    it = fwdListObj->insert_after(fwdListObj->before_begin(), 23);
+    it = fwdListObj->insert_after(it, 323);
+    it = fwdListObj->insert_after(it, 152);
+    it = fwdListObj->insert_after(it, 543);
+    it = fwdListObj->insert_after(it, 2, 62);
+    it = fwdListObj->insert_after(it, 346);
+    it = fwdListObj->insert_after(it, 85);
+    it = fwdListObj->insert_after(it, 4345);
+    it = fwdListObj->insert_after(it, 9875);
+    it = fwdListObj->insert_after(it, 6575);
+    
+    cout << "Forward list content is : " << endl;
+    for (auto it = fwdListObj->cbegin(); it != fwdListObj->cend(); ++it)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+    
+    cout << "Sorted forward_list content in ascending order is : " << endl;
+    fwdListObj->sort();
+    for (auto it = fwdListObj->cbegin(); it != fwdListObj->cend(); ++it)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+
+    cout << "Sorted forward_list content in descending order is : " << endl;
+    fwdListObj->sort(greater<int>());
+    for (auto it = fwdListObj->cbegin(); it != fwdListObj->cend(); ++it)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+void basicStringExample()
+{
+    
 }
 
 int main(int argc, char **argv)
@@ -123,5 +213,7 @@ int main(int argc, char **argv)
     vectorExample();
     dequeExample();
     listExample();
+    arrayExample();
+    forward_listExample();
 	return 0;
 }
